@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function myClick(){
+         let absatz1 = document.getElementById('absatz1').innerHTML
+         document.getElementById('absatz1').innerHTML = "Doch Text";
+       }
+
+
+        window.addEventListener("load", function(){
+          let absatz1 = document.getElementById('absatz1').innerHTML;
+          console.log(absatz1);
+
+           document.getElementById('absatz1').innerHTML = "Hallo";
+        });
+    </script>
+  </head>
+  <body>
+
+
+    <p id="absatz1">test</p>
+    <button id="b1" onclick=myClick()>Klick mich</button>
+
+  </body>
+</html>
